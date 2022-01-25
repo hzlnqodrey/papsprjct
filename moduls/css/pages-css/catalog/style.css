@@ -1,0 +1,558 @@
+/* import font-rule */
+@import "../../font-rule.css/montserrat.css";
+@import "../../font-rule.css/open-sans.css";
+
+/* element css import */
+@import "../../section-css/navigasi.css";
+@import "../../section-css/footer.css";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+body {
+    font-family: montserrat-regular;
+}
+
+
+/* 1349 reso */
+
+main .main-container {
+    width: 100%;
+    height: 1500px;
+    margin-top: 70px;
+}
+
+main .main-title {
+    text-align: center;
+    max-height: 100vh;
+}
+
+main .dropright {
+    margin-top: 40px;
+}
+
+/* dropdown config color */
+
+.dropright .nav-link {color:#fff; text-decoration: none;}
+/* .dropright {list-style: none; background: #011638; padding: 10px; display: inline-block;} */
+.dropright .dropdown-menu a{color: #000; text-decoration: none;}
+
+.dropright .btn:hover {background: #f0f0f0; color:#000;}
+.dropright .btn:active {background: #f0f0f0; color:#000;}
+.dropright .btn:focus {background: #f0f0f0; color:#000;}
+.dropdown-menu .dropdown-item {display: inline-block; width: 100%; padding: 10px 5px;}
+.main-title .dropright .dropdown-menu button:hover
+{
+  color: #000;
+  background-color: #f0f0f0;
+  border-color: #fff;
+}
+
+.dropright .btn {background: #011638; color:#f0f0f0; font-family: montserrat-bold;}
+
+    /* MAIN ITEMS */
+
+    /* flexbox alignment */
+
+    main .main-items-line-1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        /* align-items: center; */
+        align-content: space-between;
+        /* yg dulu margin-top: 81px; */
+        margin-top: 51px;
+    }
+
+    /* article a-link cleancse */
+
+    main .main-items-line-1 a {
+        color: black;
+        text-decoration: none;
+    }
+
+    /* ARTICLES */
+    main .article {
+        width: 250px;
+        border-radius: 5px 5px 0px 0px;
+    }
+
+    main .article1 {
+        border-radius: 5px;
+        margin-top: 20px;
+        cursor: pointer;
+        padding: 25px;
+        background-color: white;
+        width: 297.24px;
+        height: 400px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+        font-family: montserrat-semi-bold;
+        font-size: 14px;
+        text-align: center;
+    }
+
+        /* article 1 hover */
+        main .article1 h4 {
+            margin-top: -225px;
+        }
+
+        main .article1 .img-article-1 {
+            opacity: 1;
+            transition: .35s linear;
+            backface-visibility: hidden;
+        }
+
+        main .article1 .article-hidden {
+            transition: .35s linear;
+            opacity: 0;
+            position: relative;
+            top: 0%;
+            transform: translate(0%, -100%);
+            -ms-transform: translate(0%, -50%);
+        }
+
+        main .article1:hover .img-article-1 {
+            opacity: 0;
+        }
+        
+        main .article1:hover .article-hidden {
+            opacity: 1;
+            /* filter: drop-shadow(0px 4px 4px rgba(0, 0.25, 0, 0.25)); */
+            box-shadow: 8px 8px 5px #b6b6b6;
+
+        }
+
+        main .article1:hover h4 {
+            font-family: montserrat-extra-bold;
+        }
+
+        main .article1:hover .harga p {
+            color: red;
+            font-family: montserrat-bold;
+        }
+
+        main .article1:hover .harga .coret p {
+            color: black;
+            font-family: montserrat-regular;
+        }
+
+        main .article1 .article-hidden .img-hidden-1 {
+            width: 250px;
+            height: 250px;
+        }
+
+        /* ------------------------------------------- */
+
+        main .article1 h4 {
+            font-size: 14px;
+        }
+
+        main .article1 .harga {
+            word-spacing: 30px;
+        }
+
+        main .article1 p {
+            margin-top: 20px;
+            display: inline-block;
+            font-size: 20px;
+            font-family: montserrat-regular;
+        }
+
+
+            main .article1 .harga .coret p {                                
+                font-size: 20px;
+                text-decoration-line:line-through;
+
+            }
+
+            main .article1 .harga .coret {
+                display: inline-block;
+
+            }
+
+main article {
+    margin-top: 2%;
+    text-align: center;
+}
+
+
+    /* overflow hidden */
+    .hamburger-nav-menu nav {
+        font-size: 0px;
+        position: relative;
+        left: -10000px;
+        overflow: hidden;
+    }
+
+@media all and (min-width: 768px) and (max-width: 1024px) { 
+
+    main .main-container {
+        width: 100%;
+        height: 2200px;
+        margin-top: 70px;
+    }
+
+    /* articles */
+    main .article {
+        width: 200px;
+    }
+    
+    main .article1 {
+        cursor: pointer;
+        padding: 15px;
+        background-color: white;
+        width: 237.749px;
+        height: 350px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+        font-family: montserrat-semi-bold;
+        font-size: 14px;
+        text-align: center;
+    }
+
+            /* article 1 hover */
+            main .article1 h4 {
+                margin-top: -80%;
+            }
+            
+            main .article1 .article-hidden .img-hidden-1 {
+                width: 200px;
+                height: 200px;
+            }
+
+    main article {
+        margin-top: 10%;
+        text-align: center;
+    }
+}
+
+@media all and (min-width: 426px) and (max-width: 1240px) {
+    .hamburger-nav-menu nav {
+        font-size: 16px;
+        position: relative;
+        left: 0px;
+        overflow: hidden;
+    }
+}
+
+@media all and (min-width: 951px) and (max-width: 1024px) {
+    main .main-container {
+        height: 1500px;
+    }
+    main article {
+        margin-top: 10%;
+        text-align: center;
+    }
+
+}
+
+@media all and (min-width: 768px) and (max-width: 950px) {
+    main .main-container {
+        height: 1500px;
+    }
+    main article {
+        margin-top: 10%;
+        text-align: center;
+    }
+}
+
+@media all and (min-width: 595px) and (max-width: 768px) {
+    main .main-container {
+        height: 2400px;
+    }
+    main article {
+        margin-top: 10%;
+        text-align: center;
+    }
+}
+
+@media all and (min-width: 426px) and (max-width: 595px) {            
+    main .main-container {
+        height: 4050px;
+    }
+
+    main article {
+        margin-top: 10%;
+        text-align: center;
+    }
+}
+
+
+@media all and (min-width: 425px) and (max-width: 768px)  {
+            
+    main .main-container {
+        width: 100%;
+        margin-top: 70px;
+    }
+
+    .hamburger-nav-menu nav {
+        font-size: 16px;
+        position: relative;
+        left: 0px;
+        overflow: hidden;
+        font-weight: montserrat-regular;
+        font-weight: 400;
+    }
+}
+
+@media all and (min-width: 375px) and (max-width: 425px) {
+        /* sticky notes */
+        header .go-to-shopee {
+            height: 30px;
+        }
+        header .go-to-shopee a{
+            font-size: 10px;
+            word-spacing: 1px;
+        }
+        
+    .hamburger-nav-menu nav {
+        font-size: 16px;
+        position: relative;
+        left: 0px;
+        overflow: hidden;
+        font-weight: montserrat-regular;
+        font-weight: 400;
+    }
+
+    main .main-container {
+        height: 1750px;
+    }
+    
+    main .article {
+        width: 170.24px;
+    }
+
+    main .article1 {
+        margin-top: 20px;
+        padding: 0px;
+        width: 170.24px;
+        height: 275px;    
+    }
+
+        /* article 1 hover */
+        main .article1 h4 {
+            margin-top: -90%;
+        }
+        
+        main .article1 .article-hidden .img-hidden-1 {
+            width: 170.24px;
+            height: 170.24px;
+        }
+        /* ------------------------------------------- */
+
+        main .article1 h4 {
+            margin-left: 5px;
+            font-family: open-sans-bold;
+            font-size: 16px;
+            text-align: left;
+        }
+
+        main .article1 .harga {
+            margin-left: 5px;
+            word-spacing: 15px;
+            text-align: left;
+        }
+
+        main .article1 p {
+            margin-top: 5px;
+            display: inline-block;
+            font-size: 20px;
+            font-family: open-sans-medium;
+        }
+
+
+            main .article1 .harga .coret p {                                
+                font-size: 16px;
+                text-decoration-line:line-through;
+
+            }
+
+            main .article1 .harga .coret {
+                display: inline-block;
+
+            }
+
+            main article {
+                margin-top: 10%;
+                text-align: center;
+            }
+
+
+}
+
+@media all and (min-width: 320px) and (max-width: 375px) {
+        /* sticky notes */
+        header .go-to-shopee {
+            height: 30px;
+        }
+        header .go-to-shopee a{
+            font-size: 10px;
+            word-spacing: 1px;
+        }
+        
+    .hamburger-nav-menu nav {
+        font-size: 16px;
+        position: relative;
+        left: 0px;
+        overflow: hidden;
+        font-weight: montserrat-regular;
+        font-weight: 400;
+    }
+
+    main .main-container {
+        height: 1750px;
+    }
+
+    main .article {
+        width: 98%;
+    }
+
+    main .article1 {
+        margin-top: 20px;
+        padding: 0px;
+        width: 50%;
+        height: 275px;    
+    }
+
+        /* article 1 hover */
+        main .article1 h4 {
+            margin-top: -150px;
+        }
+        
+        main .article1 .article-hidden .img-hidden-1 {
+            width: 175.24px;
+            height: 175.24px;
+        }
+        /* ------------------------------------------- */
+
+        main .article1 h4 {
+            margin-left: 5px;
+            font-family: open-sans-bold;
+            font-size: 14px;
+            text-align: left;
+        }
+
+        main .article1 .harga {
+            margin-left: 5px;
+            word-spacing: 15px;
+            text-align: left;
+        }
+
+        main .article1 p {
+            margin-top: 5px;
+            display: inline-block;
+            font-size: 16px;
+            font-family: open-sans-medium;
+        }
+
+
+            main .article1 .harga .coret p {                                
+                font-size: 16px;
+                text-decoration-line:line-through;
+
+            }
+
+            main .article1 .harga .coret {
+                display: inline-block;
+
+            }
+
+            main article {
+                margin-top: 10%;
+                text-align: center;
+            }
+
+}
+
+@media all and (max-width: 320px)  {
+            
+    /* sticky notes */
+    header .go-to-shopee {
+        height: 30px;
+    }
+    header .go-to-shopee a{
+        font-size: 10px;
+        word-spacing: 1px;
+    }
+    
+.hamburger-nav-menu nav {
+    font-size: 16px;
+    position: relative;
+    left: 0px;
+    overflow: hidden;
+    font-weight: montserrat-regular;
+    font-weight: 400;
+}
+
+main .main-container {
+    height: 1350px;
+}
+
+main .article {
+    width: 98%;
+}
+
+main .article1 {
+    margin-top: 5px;
+    padding: 0px;
+    width: 50%;
+    height: 220px;    
+}
+
+    /* article 1 hover */
+    main .article1 h4 {
+        margin-top: -70px;
+    }
+    
+    main .article1 .article-hidden .img-hidden-1 {
+        width: 90.24px;
+        height: 90.24px;
+    }
+    /* ------------------------------------------- */
+
+    main .article1 h4 {
+        margin-left: 5px;
+        font-family: open-sans-bold;
+        font-size: 9px;
+        text-align: left;
+    }
+
+    main .article1 .harga {
+        margin-left: 5px;
+        word-spacing: 15px;
+        text-align: left;
+    }
+
+    main .article1 p {
+        margin-top: 5px;
+        display: inline-block;
+        font-size: 10px;
+        font-family: open-sans-medium;
+    }
+
+
+        main .article1 .harga .coret p {                                
+            font-size: 10px;
+            text-decoration-line:line-through;
+
+        }
+
+        main .article1 .harga .coret {
+            display: inline-block;
+
+        }
+
+        main article {
+            margin-top: 10%;
+            text-align: center;
+        }
+}

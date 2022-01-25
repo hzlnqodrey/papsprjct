@@ -1,0 +1,567 @@
+/* import font-rule */
+@import "../../font-rule.css/montserrat.css";
+@import "../../font-rule.css/open-sans.css";
+
+/* element css import */
+@import "../../section-css/navigasi.css";
+@import "../../section-css/footer.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: montserrat-regular;
+}
+
+main .main-container {
+    width: 100%;
+    /* absolute unit */
+        /* height: 700px; */
+    /* responsive height auto */
+    height: auto;
+    /* background-color: ; */
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+main .main-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 85%;
+    margin-left: 7.5%;
+}
+
+main .detail-split {
+    margin-top: 30px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+main .carousel {
+    width: 50%;
+}
+
+main .details {
+    width: 50%;
+    background-color: #fff;
+}
+
+main .details-wrapper {
+    max-width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.details-item {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-evenly;
+}
+
+main .details-item .tagname h3 {
+    font-size: 2vw;
+    font-family: montserrat-semi-bold;
+}
+
+main .details-item .harga {
+    word-spacing: 30px;
+}
+
+main .details-item .tagname p {
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 2vw;
+    font-family: montserrat-regular;
+}
+
+
+    main .details-item .harga .coret p {
+        font-size: 2vw;
+        text-decoration-line:line-through;
+    }
+
+    main .details-item .harga .coret {
+        display: inline-block;
+    }
+
+main .details-item .buy-now-button {
+    width: 100%;
+    height: 40px;
+    font-size: 1.6vw;
+    background-color: #EEC643;
+    font-family: montserrat-bold;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+main .details-item .buy-now-button a {
+    color: #05327a;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .details-description {
+    margin-top: 30px;
+}
+main .details-item .details-description h4 {
+    font-family: montserrat-semi-bold;
+    font-size: 2vw;
+}
+
+
+main .details-item .details-description p {
+    font-family: open-sans-regular;
+    font-size: 1.6vw;
+}
+
+main .details-item .details-description table td {
+    font-size: 1.2vw;
+}
+
+main .details-item .buy-now-button:hover {
+    color: red;
+    background-color: greenyellow;
+}
+
+main article {
+    text-align: center;
+    margin-top: 2%;
+}
+
+main article h2 a {
+    text-decoration: none;
+    color: #0D21A1;
+}
+
+main article h2 a:hover {
+    text-decoration: none;
+    color: #EEC643;
+}
+
+    /* overflow hidden */
+    .hamburger-nav-menu nav {
+        font-size: 0px;
+        position: relative;
+        left: -10000px;
+        overflow: hidden;
+    }
+
+    .carousel-control-prev-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23EEC643' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+       }
+       
+       .carousel-control-next-icon {
+         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23EEC643' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+       }
+
+
+@media all and (min-width: 426px) and (max-width: 1240px) {
+    .hamburger-nav-menu nav {
+        font-size: 16px;
+        position: relative;
+        left: 0px;
+        overflow: hidden;
+    }
+}
+
+@media all and (min-width: 769px) and (max-width: 1024px) {
+    main .main-container {
+        height: 740px;
+    }
+
+    main .main-wrapper {
+        max-width: 85.17420311%;
+        margin-left: 75px;
+    }
+
+    main .details-item .tagname h3 {
+        font-family: montserrat-semi-bold;
+        font-size: 16px;
+    }
+    
+    main .details-item .harga {
+        word-spacing: 20px;
+    }
+    
+    main .details-item .tagname p {
+        margin-top: 12px;
+        font-size: 12px;
+    }
+    
+    main .details-item .harga .coret p {
+        font-size: 12px;
+    }
+
+    main .details-item .buy-now-button {
+        width: 100%;
+        height: 24px;
+        font-size: 14px;
+    }
+
+    main .details-description {
+        margin-top: 14px;
+    }
+
+    main .details-item .details-description h4 {
+        font-size: 14px;
+    }
+    
+    
+    main .details-item .details-description p {
+        font-size: 14px;
+    }
+
+    main .details-item .details-description table td {
+        font-size: 11px;
+    }
+    
+    main article h2 {
+        font-size: 24px;
+    }
+
+    footer {
+        margin-top: -16%;
+    }
+    
+}
+
+@media all and (min-width: 425px) and (max-width: 768px) {
+            /* sticky notes */
+            header .go-to-shopee {
+                height: 30px;
+            }
+            header .go-to-shopee a{
+                font-size: 10px;
+                word-spacing: 1px;
+            }
+            
+        .hamburger-nav-menu nav {
+            font-size: 16px;
+            position: relative;
+            left: 0px;
+            overflow: hidden;
+            font-weight: montserrat-regular;
+            font-weight: 400;
+        }
+    
+        /* details split -> flex: column, and change some margin padding */
+        main .detail-split {
+            margin-top: 30px;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+    
+        main .details {
+            width: 100%;
+            background-color: #fff;
+        }
+        
+        main .carousel {
+            width: 100%;
+        }
+    
+        main .details-item .tagname h3 {
+            font-size: 24px;
+            font-family: montserrat-semi-bold;
+        }
+        
+        main .details-item .harga {
+              word-spacing: 20px;
+        }
+        
+        main .details-item .tagname p {
+            margin-top: 12px;
+            font-size: 20px;
+        }
+        
+        main .details-item .harga .coret p {
+            font-size: 20px;
+        }
+    
+        main .details-item .buy-now-button {
+            width: 100%;
+            height: 24px;
+            font-size: 16px;
+        }
+    
+        main .details-description {
+            margin-top: 16px;
+        }
+    
+        main .details-item .details-description h4 {
+            font-size: 20px;
+        }
+        
+        
+        main .details-item .details-description p {
+            font-size: 18px;
+        }
+    
+        main .details-item .details-description table td {
+            font-size: 16px;
+        }
+        
+        main article h2 {
+            font-size: 24px;
+        }
+}
+
+@media all and (min-width: 375px) and (max-width: 425px) {
+        /* sticky notes */
+        header .go-to-shopee {
+            height: 30px;
+        }
+        header .go-to-shopee a{
+            font-size: 10px;
+            word-spacing: 1px;
+        }
+    .hamburger-nav-menu nav {
+        font-size: 16px;
+        position: relative;
+        left: 0px;
+        overflow: hidden;
+        font-weight: montserrat-regular;
+        font-weight: 400;
+    }
+
+    /* details split -> flex: column, and change some margin padding */
+    main .detail-split {
+        margin-top: 30px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .details {
+        width: 100%;
+        background-color: #fff;
+    }
+    
+    main .carousel {
+        width: 100%;
+    }
+
+    main .details-item .tagname h3 {
+        font-size: 24px;
+        font-family: montserrat-semi-bold;
+    }
+    
+    main .details-item .harga {
+          word-spacing: 20px;
+    }
+    
+    main .details-item .tagname p {
+        margin-top: 12px;
+        font-size: 20px;
+    }
+    
+    main .details-item .harga .coret p {
+        font-size: 20px;
+    }
+
+    main .details-item .buy-now-button {
+        width: 100%;
+        height: 24px;
+        font-size: 16px;
+    }
+
+    main .details-description {
+        margin-top: 16px;
+    }
+
+    main .details-item .details-description h4 {
+        font-size: 20px;
+    }
+    
+    
+    main .details-item .details-description p {
+        font-size: 18px;
+    }
+
+    main .details-item .details-description table td {
+        font-size: 16px;
+    }
+    
+    main article h2 {
+        font-size: 24px;
+    }
+}
+
+@media all and (min-width: 320px) and (max-width: 375px) {
+
+            /* sticky notes */
+        header .go-to-shopee {
+            height: 30px;
+        }
+        header .go-to-shopee a{
+            font-size: 10px;
+            word-spacing: 1px;
+        }
+    .hamburger-nav-menu nav {
+        font-size: 16px;
+        position: relative;
+        left: 0px;
+        overflow: hidden;
+        font-weight: montserrat-regular;
+        font-weight: 400;
+    }
+
+    /* details split -> flex: column, and change some margin padding */
+    main .detail-split {
+        margin-top: 30px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .details {
+        width: 100%;
+        background-color: #fff;
+    }
+    
+    main .carousel {
+        width: 100%;
+    }
+
+    main .details-item .tagname h3 {
+        font-size: 20px;
+        font-family: montserrat-semi-bold;
+    }
+    
+    main .details-item .harga {
+          word-spacing: 20px;
+    }
+    
+    main .details-item .tagname p {
+        margin-top: 12px;
+        font-size: 16px;
+    }
+    
+    main .details-item .harga .coret p {
+        font-size: 16px;
+    }
+
+    main .details-item .buy-now-button {
+        width: 100%;
+        height: 24px;
+        font-size: 14px;
+    }
+
+    main .details-description {
+        margin-top: 16px;
+    }
+
+    main .details-item .details-description h4 {
+        font-size: 16px;
+    }
+    
+    
+    main .details-item .details-description p {
+        font-size: 14px;
+    }
+
+    main .details-item .details-description table td {
+        font-size: 14px;
+    }
+    
+    main article h2 {
+        font-size: 20px;
+    }
+}
+
+@media all and (max-width: 320px) {
+    /* sticky notes */
+    header .go-to-shopee {
+        height: 30px;
+    }
+    header .go-to-shopee a{
+        font-size: 10px;
+        word-spacing: 1px;
+    }
+.hamburger-nav-menu nav {
+    font-size: 16px;
+    position: relative;
+    left: 0px;
+    overflow: hidden;
+    font-weight: montserrat-regular;
+    font-weight: 400;
+}
+
+/* details split -> flex: column, and change some margin padding */
+main .detail-split {
+    margin-top: 30px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main .details {
+    width: 100%;
+    background-color: #fff;
+}
+
+main .carousel {
+    width: 100%;
+}
+
+main .details-item .tagname h3 {
+    font-size: 16px;
+    font-family: montserrat-semi-bold;
+}
+
+main .details-item .harga {
+      word-spacing: 20px;
+}
+
+main .details-item .tagname p {
+    margin-top: 12px;
+    font-size: 16px;
+}
+
+main .details-item .harga .coret p {
+    font-size: 16px;
+}
+
+main .details-item .buy-now-button {
+    width: 100%;
+    height: 24px;
+    font-size: 12px;
+}
+
+main .details-description {
+    margin-top: 16px;
+}
+
+main .details-item .details-description h4 {
+    font-size: 16px;
+}
+
+
+main .details-item .details-description p {
+    font-size: 14px;
+}
+
+main .details-item .details-description table td {
+    font-size: 14px;
+}
+
+main article h2 {
+    font-size: 20px;
+}
+}

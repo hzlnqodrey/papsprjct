@@ -1,0 +1,200 @@
+/* FOOTER */
+
+    /* FOOTER-1 */
+    .footer1-container {
+        color: white;
+        background-color: black;
+        height: 265px;
+        margin-top: 5px;
+        padding: 48px 60px 47px 60px;
+
+    }
+            footer .footer-item {
+                font-size: 16px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+                footer .footer-item h3 {
+                    font-size: 0.8em;
+                    font-family: montserrat-bold;
+                }
+
+                footer .footer-item p {
+                    font-size: 0.7em;
+                }
+
+                footer .footer-item .contact-person p span {
+                    font-size: 1em;
+                    font-family: montserrat-extra-bold;
+                }
+
+                .follow-us {
+                    /* margin-bottom: 80px; */
+                }
+
+                    footer .follow-us-item {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+
+                        footer .follow-us-item a {
+                            text-decoration: none;
+                            color: white;
+                        }
+
+                            footer .follow-us-item img {
+                                margin-bottom: 7px;
+                                width: 16px;
+                                height: 16px;
+                            }
+
+    /* FOOTER 2 */
+    .footer2-container {
+        color: white;
+        background-color: black;
+        height: 50px;
+        margin-top: 1px;
+        padding-top: 15px;
+        padding-left: 60px;
+        font-family: montserrat-extra-light;
+        font-size: 0.8em;
+    }
+
+@media all and (min-width: 425px) and (max-width: 768px) {
+     /* FOOTER-1 */
+     .footer1-container {
+        height: 650px;
+    }
+
+    
+    footer .footer-item {
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .follow-us {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        margin-right: 100px;
+    }
+
+    .about-us {
+        margin-right: 95px;
+    }
+}
+
+@media all and (min-width: 375px) and (max-width: 425px) {
+        /* FOOTER-1 */
+        .footer1-container {
+            height: 650px;
+        }
+
+        
+        footer .footer-item {
+            font-size: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+    
+
+        .follow-us {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            margin-right: 100px;
+        }
+
+        .about-us {
+            margin-right: 95px;
+        }
+
+            /* FOOTER 2 */
+    .footer2-container {
+        height: 35px;
+        margin-top: 1px;
+        padding-top: 10px;
+        padding-left: 40px;
+        font-family: montserrat-extra-light;
+        font-size: 0.75em;
+    }
+}
+
+@media all and (min-width: 320px) and (max-width: 375px) {
+        /* FOOTER-1 */
+        .footer1-container {
+            height: 650px;
+        }
+
+        
+        
+        footer .footer-item {
+            font-size: 14px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+    
+
+        .follow-us {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            margin-right: 85px;
+        }
+
+        .about-us {
+            margin-right: 80px;
+        }
+
+            /* FOOTER 2 */
+    .footer2-container {
+        height: 35px;
+        margin-top: 1px;
+        padding-top: 10px;
+        padding-left: 40px;
+        font-family: montserrat-extra-light;
+        font-size: 0.75em;
+    }
+}
+
+@media all and (max-width: 320px) {
+    .footer1-container {
+        height: 650px;
+    }
+
+    
+    
+    footer .footer-item {
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .follow-us {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        margin-right: 85px;
+    }
+
+    .about-us {
+        margin-right: 80px;
+    }
+    /* FOOTER 2 */
+    .footer2-container {
+        height: 35px;
+        margin-top: 1px;
+        padding-top: 10px;
+        padding-left: 40px;
+        font-family: montserrat-extra-light;
+        font-size: 0.75em;
+    }
+}
